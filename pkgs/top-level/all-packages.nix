@@ -585,6 +585,8 @@ let
 
   arandr = callPackage ../tools/X11/arandr { };
 
+  hotplug-monitor = callPackage ../tools/X11/hotplug-monitor { };
+
   arangodb = callPackage ../servers/nosql/arangodb {
     inherit (pythonPackages) gyp;
   };
